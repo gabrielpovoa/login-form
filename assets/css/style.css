@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    list-style: none;
+}
+
+:root {
+    --white: #F4F4F4;
+    --white-color: #FFF;
+    --orange: #FF7315;
+    --grey: #3A3535;
+    --black-light: #232020;
+    --black: #454545;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: var(--grey);
+}
+
+header {
+    max-width: 800px;
+    background-color: var(--black-light);
+    margin: 3rem auto;
+    padding: 2rem 3%;
+    border-radius: .5rem;
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav .logo {
+    width: 50px; height: 50px;
+    background-color: var(--orange);
+    border-radius: 50%;
+}
+
+.header nav .logo img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.header nav .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header nav .menu ul li {
+    padding: .3rem 1rem;
+}
+
+.header nav .menu ul li a {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.header nav .menu ul li:hover a {
+    text-decoration: underline;
+    color: var(--white-color);
+}
+
+section {
+    max-width: 800px;
+    background-color: var(--black);
+    margin: 3rem auto;
+    padding: 2rem 3%;
+}
+
+section h1 {
+    text-align: center;
+    margin: 0 0 4rem 0;
+    color: var(--);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 300px;
+}
+
+.form-item label {
+    align-self: flex-start;
+    line-height: 0;
+}
+
+.form-item label:last-of-type{
+    margin-top: .8rem;
+}
+
+.form-item .box {
+    width: 100%; height: inherit;
+    padding: .8rem .3rem;
+    border-radius: .4rem;
+    background-color: var(--grey);
+    color: var(--white);
+    text-transform: none;
+    font-size: 1.1rem;
+}
+
+#registry::placeholder {
+    text-transform: none;
+}
+
+.form-item .icon {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.form-item .icon .fa-eye {
+    margin-left: -50px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    cursor: pointer;
+    margin-top: .5rem;
+    padding: .4rem 1rem;
+}
+
+.btn:hover {
+    background-color: var(--orange);
+}
+
+#user-area {
+    display: none;
+}
+
+.modal-access {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.modal-access .image {
+    width: 150px; height: 150px;
+    background-color: #232020;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4%;
+}
+
+.modal-access .image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media  (max-width: 770px) {
+    header {
+        max-width: 600px;
+        padding: 2rem;
+    }
+    section {
+        max-width: 600px;
+    }
+    .modal-access .image {
+        width: 100px; height: 100px;
+    }
+      
+}
+
+@media  (max-width: 450px) {
+    header {
+        max-width: 300px;
+        padding: 2rem;
+    }
+    section {
+        max-width: 300px;
+        padding: 2rem;
+    }
+    .modal-access {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .modal-access .image{
+        width: 80px; height: 80px;
+    }
+}

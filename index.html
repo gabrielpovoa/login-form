@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <nav>
+          <div class="logo">
+            <a href="#">
+              <img src="assets/img/user4.png" alt="Alien 4" />
+            </a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#back" onclick="history.back()">Back</a>
+              </li>
+              <li>
+                <a href="#signUp">SignUp</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="login-area">
+      <h1>Login !</h1>
+      <div class="container">
+        <form action="" class="form-item">
+          <label for="#registry">Registry</label>
+          <input
+          class="box" 
+            type="text" 
+            id="registry" 
+            placeholder="Enter your registry" />
+          <label for="#password">password</label>
+         
+          <div class="icon">
+            <input
+            class="box"
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+            <i class="fa-solid fa-eye" id="eye-toggle"></i>
+          </div>
+          <button class="btn" id="access">Access</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="user-area">
+        <h1>User area</h1>
+        <div class="modal-access">
+            <div class="image">
+                <img src="assets/img/user.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/user1.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/user2.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/user3.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/user4.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/user5.png" alt="">
+            </div>
+            <div class="image">
+                <img src="assets/img/user6.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
